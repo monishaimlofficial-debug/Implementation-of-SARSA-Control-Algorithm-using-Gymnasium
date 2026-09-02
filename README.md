@@ -158,8 +158,6 @@ for episode in range(num_episodes):
 
     episode_rewards.append(rewards_current_episode)
 
-<img width="250" height="337" alt="Screenshot 2026-09-02 182327" src="https://github.com/user-attachments/assets/0d7858d8-7cf3-46fe-a68e-382675cdc23f" />
-
 # Derive state-value function and policy from the learned Q-table
 state_values = np.max(Q, axis=1)
 learned_policy = np.argmax(Q, axis=1)
@@ -168,26 +166,26 @@ learned_policy = np.argmax(Q, axis=1)
 
 ## Output
 
-```text
+
 Final Q-table:
 
+<img width="250" height="337" alt="Screenshot 2026-09-02 182327" src="https://github.com/user-attachments/assets/abf81194-5d6c-424e-a1e1-2d4457aa5297" />
 
 
 Estimated State-Value Function:
 
 
-
+<img width="281" height="106" alt="Screenshot 2026-09-02 182635" src="https://github.com/user-attachments/assets/81ee3d5e-920b-4a68-b376-45d0b973ad7c" />
 
 
 Learned Policy:
 
-
-
+<img width="182" height="105" alt="Screenshot 2026-09-02 182659" src="https://github.com/user-attachments/assets/99bd4d87-2c0e-43b8-95cb-9a6213bff792" />
 
 Average reward over last 1000 episodes: 
 
+<img width="405" height="21" alt="Screenshot 2026-09-02 182728" src="https://github.com/user-attachments/assets/d341a061-0c67-48f5-8bb8-fc72c814e541" />
 
-```
 
 ---
 
